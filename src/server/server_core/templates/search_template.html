@@ -1,0 +1,46 @@
+<div class="element-header col-12 offset-0 col-lg-12 text-center">
+    <p class="search-header">Search for: {{ key }}</p>
+    <p class="search-header">Result: {{ result_amount }} entries</p>  
+</div>
+
+<div class="element-pages col-12 offset-0 col-lg-10 offset-lg-1 text-center">
+    <p class="search-page underline">&#8810;</p>
+    <p class="search-page underline">&#60;</p>
+    <p class="search-page active"> {{ page_number }} </p>
+    <p class="search-page underline">&#62;</p>
+    <p class="search-page underline">&#8811;</p>
+</div>
+
+
+
+
+<div class="search-result">
+    
+    {% for pack in packs %}
+    <div class="element-list col-12 offset-0 col-lg-8 offset-lg-2" onclick="start_test(this)" data-id="{{ pack.id }}">
+        <div class="name-id">
+            <p class="el-name"> {{ pack.name }} </p>
+            <p class="el-id"> #{{ pack.id }}</p>
+            <p class="el-history"> [ {{ pack.date }} ]</p>
+        </div>
+       
+        <hr class="name-id my-8">
+       
+        <div class="description">
+            <p class="description"> {{ pack.description }} </p>
+        </div>
+    </div>
+    {% endfor %}
+
+</div>
+
+
+
+
+<div class="element-pages col-12 offset-0 col-lg-10 offset-lg-1 text-center">
+    <p class="search-page underline">&#8810;</p>
+    <p class="search-page underline">&#60;</p>
+    <p class="search-page active"> {{ page_number }} </p>
+    <p class="search-page underline">&#62;</p>
+    <p class="search-page underline">&#8811;</p>
+</div>

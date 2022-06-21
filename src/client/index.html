@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <!-- Own CSS -->    
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
+  
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>  
+
+  <!-- My JS modules -->
+  <script type="text/javascript" src="js/navbarMain.js"></script>
+  <script type="text/javascript" src="js/ajax_requests.js"></script>
+  <script type="text/javascript" src="js/modules.js"></script>
+  <script type="text/javascript" src="js/manage_test.js"></script>
+
+  <title>Remtest!</title>
+</head>
+
+<body>
+
+  <div class="full-content">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary" id="navbarMain">
+      <a class="navbar-brand" href="#" onclick="startup()">Remtest!</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="navbarToggler">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item" id="popular">
+            <a class="nav-link" href="#" onclick="popular()">Popular packs</a>
+          </li>
+          <li class="nav-item" id="add_pack">
+            <a class="nav-link" href="#" onclick="add_pack()">Add pack</a>
+          </li>
+          <li class="nav-item" id="about">
+            <a class="nav-link" href="#" onclick="about()">About project</a>
+          </li>
+        </ul>
+        <form class="form-inline my-0 my-lg-2">
+          <input class="form-control col-8" type="search" placeholder="Search for packs..." aria-label="Search">
+          <button class="col-3 btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <div class="ajax-content">    
+
+    </div>
+  </div>
+
+
+  <div class="footer-copyright text-center text-black-60 py-3">
+    <a>Have an idea?</a>
+    <img src="images/idea.png">
+    <a class="dark-grey-text" href="#">draevich.matvey@gmail.com</a>
+  </div>
+
+
+</body>
+
+</html>
